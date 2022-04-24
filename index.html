@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
     <title>Ryan - Portólio Visual</title>
 </head>
 <body id="body">
@@ -50,7 +51,7 @@
         <h1>Olá meu nome é Ryan Oliveira</h1>
         <h4>web-design e desenvolvimentos front-end</h4>
     </div>
-    <div data-slide="slide" class="slide">
+    <div data-slide="slide" id="sl" class="slide">
         <div class="slide-items">
           <img src="./assets/themebau.png" alt="Img 1">
           <img src="./assets/roxo.png" alt="Img 1">
@@ -60,15 +61,20 @@
         <nav class="slide-nav">
           <div class="slide-thumb"></div>
           <button class="slide-prev">Anterior</button>
-          <button class="slide-next">Próximo</button>
+          <button class="slide-next">Próxsimo</button>
         </nav>
       </div>
-    
-      <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
-        <h1>Estudos:</h1>
-        <h4>web-design e desenvolvimentos front-end</h4>
-    </div>
+    <section>
+        <a href="#estudos"><div class="setaBaixo"></div></a>
+    </section>
 
+    <section id="estudos">
+        <div tabindex="0" class="content estudos" onfocus="closeSidebar()" id="content">
+            <h1>Estudos</h1>
+            <h4>web-design e desenvolvimentos front-end</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nostrum amet aperiam nobis dicta consequuntur corrupti sint consequatur possimus unde fugiat adipisci incidunt quam libero nihil, voluptatum molestiae debitis deleniti!</p>
+        </div>
+    </section>    
       <script src="./slide-stories.js"></script>
       <script src="./script.js"></script>
 </body>

@@ -1,6 +1,7 @@
 var header           = document.getElementById('header');
 var navigationHeader = document.getElementById('navigation_header');
 var content          = document.getElementById('content');
+var sl          = document.getElementById('sl');
 var showSidebar      = false;
 
     function toggleSidebar()
@@ -11,12 +12,14 @@ var showSidebar      = false;
             navigationHeader.style.marginLeft = '-10vw';
             navigationHeader.style.animationName = 'showSidebar';
             content.style.filter = 'blur(4px)';
+            sl.style.filter = 'blur(4px)';
         }
         else
         {
             navigationHeader.style.marginLeft = '-100vw';
             navigationHeader.style.animationName = '';
             content.style.filter = '';
+            sl.style.filter = '';
         }
     }
 

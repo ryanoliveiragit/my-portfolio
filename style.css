@@ -36,7 +36,7 @@ svg{
 }
 .navigation_header{
     gap: 3em;
-    z-index: 2;
+    z-index: 9999;
 }
 .content{
     padding-top: 4em;
@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
   }
 
   .slide {
-    max-width: 62%;
+    max-width: 52%;
     margin: 40px auto;
     display: grid;
     box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
@@ -207,3 +207,34 @@ body::-webkit-scrollbar {
       transform: initial;
     }
   }
+
+  
+div.setaBaixo{
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/setaDown.png");
+  background-size: contain;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  animation-name: setaBaixo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes setaBaixo{
+  0%{
+      top: 0px;
+  }
+  100%{
+      top: 20px;
+  }
+}
+
+.estudos {
+  padding-top: 6%;
+}
