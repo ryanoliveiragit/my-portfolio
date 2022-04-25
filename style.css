@@ -39,7 +39,7 @@ svg{
     z-index: 9999;
 }
 .content{
-    padding-top: 4em;
+    padding-top: 3em;
     text-align: center;
     transition: 1s;
 }
@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
   }
 
   .slide {
-    max-width: 52%;
+    max-width: 60%;
     margin: 40px auto;
     display: grid;
     box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
@@ -150,20 +150,48 @@ body::-webkit-scrollbar {
         display: block;
   }
   
+  .slide-items a{
+    max-width: 100%;
+  }
   .slide-nav {
     grid-area: 1/1;
-    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
+    justify-content: space-between;
   }
   
   .slide-nav button {
     -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    opacity: 0;
+    opacity: 1;
+    max-width: 30%;
+  }
+
+  #btnSlideNext {
+    margin-left: 80%;
+  }
+
+  #btnSlideBack {
+    margin-right: 80%;
   }
   
+.slide-nav button img{
+  width: 30%;
+  opacity: 100;
+  transition: 0.2s;
+  
+}
+
+.slide-nav button img:hover{
+  width: 33%;
+}
+
+
   .slide-items > * {
     position: absolute;
     top: 0px;
@@ -210,15 +238,14 @@ body::-webkit-scrollbar {
 
   
 div.setaBaixo{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-image: url("/assets/setaDown.png");
   background-size: contain;
   position: relative;
-  left: 50%;
+  right: -90%;
+  margin-top: 3%;
   transform: translateX(-50%);
-
-
   animation-name: setaBaixo;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -238,3 +265,57 @@ div.setaBaixo{
 .estudos {
   padding-top: 6%;
 }
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image_img {
+  display: block;
+  width:100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color:white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  align-items: center;
+  transition: 0.25s;
+  justify-content: center;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(6px);
+}
+
+.image__overlay:hover{
+  opacity: 1;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0px);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+

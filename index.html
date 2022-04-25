@@ -49,23 +49,63 @@
     </div>
     <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
         <h1>Olá meu nome é Ryan Oliveira</h1>
-        <h4>web-design e desenvolvimentos front-end</h4>
+        <h4>web-design e desenvolvimento front-end</h4>
     </div>
     <div data-slide="slide" id="sl" class="slide">
         <div class="slide-items">
-          <img src="./assets/themebau.png" alt="Img 1">
-          <img src="./assets/roxo.png" alt="Img 1">
-          <img src="./assets/purpose.png" alt="Img 1">
-          <img src="./assets/RY.png" alt="Img 1">
+            <a href="#">
+                <div class="image">
+                    <img class="image__img"src="./assets/themebau.png" alt="Img 1">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Themebau</div>
+                        <p class="image__description">
+                            Here we have a brick wall
+                        </p>
+                    </div>
+                </div>
+            </a>
+          <a href="#">
+            <div class="image">
+                <img class="image__img"src="./assets/roxo.png" alt="Img 1">
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__title">Geeks</div>
+                    <p class="image__description">
+                        Here we have a brick wall
+                    </p>
+                </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="image">
+                <img class="image__img"src="./assets/purpose.png" alt="Img 1">
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__title">Quick</div>
+                    <p class="image__description">
+                        Here we have a brick wall
+                    </p>
+                </div>
+            </div>
+            </a>
+          <a href="#">
+            <div class="image">
+                <img class="image__img"src="./assets/RY.png" alt="Img 1">
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__title">Now Ui Kit</div>
+                    <p class="image__description">
+                        Here we have a brick wall
+                    </p>
+                </div>
+            </div>
+          </a>
         </div>
         <nav class="slide-nav">
           <div class="slide-thumb"></div>
-          <button class="slide-prev">Anterior</button>
-          <button class="slide-next">Próxsimo</button>
+          <button class="slide-prev" id="btnSlideBack"><img src="./assets/setaEsq.png" alt=""></button>
+          <button class="slide-next" id="btnSlideNext"><img src="./assets/setaDireita.png" alt=""></button>
         </nav>
       </div>
     <section>
-        <a href="#estudos"><div class="setaBaixo"></div></a>
+        <a href="#estudos"><div class="setaBaixo" id="seta"></div></a>
     </section>
 
     <section id="estudos">
