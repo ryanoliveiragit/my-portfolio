@@ -1,0 +1,54 @@
+.image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image_img {
+    display: block;
+    width:100%;
+  }
+  
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    align-items: center;
+    transition: 0.25s;
+    justify-content: center;
+  }
+  
+  .image__overlay--blur {
+    backdrop-filter: blur(6px);
+  }
+  
+  .image__overlay:hover{
+    opacity: 1;
+  }
+  
+  .image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  
+  .image__overlay:hover > * {
+    transform: translateY(0px);
+  }
+  
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+  }
+  
+  

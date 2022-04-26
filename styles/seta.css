@@ -1,0 +1,49 @@
+div.setaBaixo{
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/setaDown.png");
+    background-size: contain;
+    position: relative;
+    right: -100%;
+    margin-top: 3%;
+    transform: translateX(-50%);
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes setaBaixo{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 20px;
+    }
+  }
+
+  div.setaCima{
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/setaUp.png");
+    background-size: contain;
+    position: relative;
+    right: -165%;
+    margin-top: -1%;
+    transform: translateX(-50%);
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes setaBaixo{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 20px;
+    }
+  }
