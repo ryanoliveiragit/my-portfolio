@@ -1,4 +1,8 @@
-.image {
+.estudos {
+    padding-top: 6%;
+  }
+  
+  .image {
     position: relative;
     width: 100%;
   }
@@ -50,5 +54,3 @@
     font-size: 1.25em;
     margin-top: 0.25em;
   }
-  
-  
