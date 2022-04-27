@@ -294,6 +294,7 @@ body.menu-active .menu::before {
   color: white;
   padding-left: 27%;
   padding-top: 13%;
+  font-weight: 250;
 }
 
 
@@ -301,8 +302,8 @@ body.menu-active .menu::before {
   color: rgb(207, 207, 207);
   padding-left: 27%;
   padding-top: 2%;
-  font-weight: 200;
-  font-size: 1em;
+  font-weight: 100;
+  font-size: 18px;
 }
 
 
