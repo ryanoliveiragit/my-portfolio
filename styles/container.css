@@ -3,3 +3,7 @@
     padding-right: 9%;
     padding-top: 2%;
   }
+
+  * {
+    transition:0.9s;
+  }

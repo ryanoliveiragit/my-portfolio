@@ -3,13 +3,14 @@
 }
 
 .pd {
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .study img {
     width: 90%;
     border-radius: 10px;
     left: -50%;
+    border: 1px solid rgba(20, 20, 20, 0.24);
 }
 
 .image__overlays {
@@ -59,5 +60,5 @@
     padding-top: 3em;
     text-align: center;
     transition: 1s;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }

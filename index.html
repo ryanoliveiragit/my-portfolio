@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/overlay.css">
     <link rel="stylesheet" href="./styles/study.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="./styles/footer.css">
+    
 
     <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
     <title>Ryan - Portólio Visual</title>
 </head>
 <body id="body">
     <div class="container">
-        <div class="header" id="header">
+        <div class="header" data-aos="fade-up" id="header">
             <button onclick="toggleSidebar()" class="btn_icon_header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -48,12 +52,12 @@
                     </svg>
                 </button>
 
-                <nav class="menu" id="navigation_header2">
+                <nav class="menus" id="navigation_header2">
                 <a href="#sl" class="active">Web Developer</a>
                 <a href="#std">Estudos</a>
                 <a href="#sl">Projetos</a>
                 <a href="#contato">Contato</a>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre2">Sobre</a>
                 </nav>
             </div>
         </div>
@@ -114,25 +118,26 @@
               <button class="slide-next" id="btnSlideNext"><img src="./assets/setaDireita.png" alt=""></button>
             </nav>
           </div>
-        <section class="menu">
-            <a href="#seta2"><div class="setaBaixo" id="seta"></div></a>
+          <section class="menu">
+            <a href="#sobre"><div class="setaBaixo"></div></a>
         </section>
     </div>
-    <section class="active sobre" id="sobre">
+    <section class="active sobre pt" data-aos="fade-up" id="sobre2">
         <div tabindex="0" class="content estudos" onfocus="closeSidebar()" id="content">
             <div class="sobre">
                 <img id="minhafoto" class="container" src="./assets/minhafoto3.png" alt="">
                 <div class="sobreInfo">
-                    <h2>Tudo certo?<span> !</span></h2>
+                    <h2>Opá!, tudo certo?<span> !</span></h2>
                     <h4>Aqui conto um pouquinho sobre mim</h4>
                     <p>Prazer, me chamo Ryan Oliveira e tenho 20 anos, atualmente sou Desenvolvedor web apaixonado por tecnologia. Procuro estar sempre a par das novidades para criar in
                     terfaces seguindo conceitos modernos e avançados, focadas na usabilidade e no design emocional<span>.</span></p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="active estudos">
+    <section class="active estudos" data-aos="fade-up">
         <div tabindex="0" class="contentStudy" onfocus="closeSidebar()" id="content">
             <h1 class="pd">Estou estudando:</h1>
             <div class="container study">
@@ -170,7 +175,7 @@
                 
             </div>
 
-            <div class="container study">
+            <div class="container study" data-aos="fade-up">
 
                 <div class="image html">
                     <img class="image__img"src="./assets/node.png" alt="Img 1">
@@ -201,34 +206,51 @@
                         </p>
                     </div>
                 </div>
-
             </div>
-            
         </div>
     </section>
 
-    <section class="active sobre" id="sobre">
-        <div tabindex="0" class="content estudos" onfocus="closeSidebar()" id="content">
-            <div class="sobre" id="contato">
-                    <div class="devProjeto container">
-                        <h1>Vamos desenvolver
-                            um projeto?</h1>
-                            <p>Envie uma mensagem contando um pouquinho da sua ideia e entrar em contato com você!</p>
-                        <section class="menu">
-                            <a href="#header"><div class="setaCima" id="seta2"></div></a>
-                        </section>
-                           
+    <section class="active sobre2" id="sobre" data-aos="fade-up">
+        <div class="nav2">
+        </div>
+          <div class="container2">
+            <div class="inner">
+              <div class="panel panel-left">
+                <div class="panel-content">
+                    <h1 class="text">Vamos desenvolver um projeto?</h1>
+                    <h2  class="text2">Nos envie uma mensagem contando um pouquinho da sua ideia e entraremos em contato com você!</h2>
+                </div>
+              </div>
+              <div class="panel panel-right">
+                <div class="panel-content">
+                  <div class="form">
+                    <h1>Contato</h1>
+                    <div class="group">      
+                      <input type="text" required>
+                      <span class="highlight"></span>
+                      <label>Seu nome</label>
                     </div>
-                <form  class="formulario" placeholder="Nome" action="" method="POST" enctype="multipart/form-data">
-                    
-                </form>
-
+                    <div class="group">      
+                      <input type="text" required>
+                      <span class="highlight"></span>
+                      <label>Seu E-Mail</label>
+                    </div>
+                    <a class="send-btn">Enviar</a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="menu"></div>
     </section>
-    
-
+</body>
     <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000,
+    });
+  </script>
     <script src="./scripts/slide-stories.js"></script>
     <script src="./scripts/scroll.js"></script>
 </body>
