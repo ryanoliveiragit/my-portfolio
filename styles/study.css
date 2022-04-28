@@ -23,32 +23,56 @@
 
 
 .soft p {
-  font-weight: 350;
+  color: var(--color-black2);
 }
 .design {
     margin-right: 2%;
     padding: 2%;
 }
 
+.design:hover{
+  border: 1px solid rgb(51, 255, 0);
+  transition: 0.8s;
+  padding: 3%;
+}
+
+.soft:hover {
+  border: 1px solid rgb(51, 255, 0);
+  transition: 0.8s;
+  padding: 3%;
+}
+
+
 .design p {
-  font-weight: 350;
+  font-weight: 400;
+  color: var(--color-black2);
 }
  
-#sv h1{
+.sv h1{
   font-size: 18px;
   padding-top:6%;
-  font-weight: 300;
+  font-weight: 400;
+  color: var(--color-black2);
   padding-left: 14.2%;
+}
+
+.sv b{
+  color: black;
 }
 
 #ng {
   font-family: 600;
 }
 
-#ft h1{
+.ft h1{
   font-size: 18px;
   padding-top:-10%;
   padding-bottom: 6%;
-  font-weight: 300;
+  font-weight: 400;
+  color: var(--color-black2);
   padding-left: 14.2%;
+}
+
+.ft b{
+  color: black;
 }

@@ -252,7 +252,7 @@ a.send-btn {
 }
 
 a.send-btn:hover {
-  color: #FAFAFA;
+  color: rgb(54, 255, 4);
   cursor: pointer;
 }
 
@@ -299,11 +299,11 @@ body.menu-active .menu::before {
 
 
 .text2 {
-  color: rgb(207, 207, 207);
+  color: rgb(236, 236, 236);
   padding-left: 27%;
   padding-top: 2%;
-  font-weight: 100;
-  font-size: 18px;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 
