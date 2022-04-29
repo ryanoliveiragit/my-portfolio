@@ -5,7 +5,7 @@ div.setaBaixo{
     background-size: contain;
     position: relative;
     right: -100%;
-    margin-top: 3%;
+    margin-top: -2%;
     transform: translateX(-50%);
     animation-name: setaBaixo;
     animation-duration: 1s;
@@ -29,8 +29,8 @@ div.setaBaixo{
     background-image: url("/assets/setaUp.png");
     background-size: contain;
     position: relative;
-    right: -165%;
-    margin-top: -1%;
+    left: 91vw;
+    margin-top: -10%;
     transform: translateX(-50%);
     animation-name: setaBaixo;
     animation-duration: 1s;

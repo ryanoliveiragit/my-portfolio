@@ -50,14 +50,12 @@ svg{
 .content{
     padding-top: 1%;
     text-align: center;
-    transition: 1s;
     margin-top: 5%;
 }
 .navigation_header a{
     text-decoration: none;
     color: var(--color-black2);
     transition: 1s;
-    
     font-weight: 400;
 }
 .navigation_header a:hover{
@@ -111,17 +109,34 @@ h4{
         position: absolute;
         flex-direction: column !important;
         top: 0;
+        padding-bottom: 1%;
         background: var(--color-white);
         border: 1px solid black;
-        height: 100%;
+        height: 100;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
         margin-left: -100vw;
     }
 
+    .container {
+      padding-top: 0%!important
+    }
+
+    #cp {
+      font-size: 10px;
+    }
     #navigation_header2{
       flex-direction: column;
+    }
+
+    .form h1 {
+      font-size: 1em!important;
+
+    }
+
+    .form {
+      margin-left: 10%;
     }
 
     nav a {
@@ -145,7 +160,7 @@ h4{
 
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 14px;              /* width of the entire scrollbar */
   }
   
   body::-webkit-scrollbar-track {
@@ -154,7 +169,7 @@ body::-webkit-scrollbar {
   
   body::-webkit-scrollbar-thumb {
     background-color: rgb(27, 27, 27);    /* color of the scroll thumb */
-    border-radius: 5px;     /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+    border-radius: 0px;     /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
   }
 
 .sobre{
@@ -165,6 +180,22 @@ body::-webkit-scrollbar {
   color: white;
   margin: 40px auto;
 }
+
+.footer {
+  background-color: transparent;
+  margin-left: 24.5%;
+  margin-top: 3%;
+}
+
+.footer svg {
+  color: white;
+}
+
+.footer svg:hover{
+  color: #48ff00;
+  transition: 0.50s;
+}
+
 
 .sobre2{
 
@@ -204,6 +235,7 @@ body::-webkit-scrollbar {
 
 .sobreInfo p {
   font-weight: 200;
+  color: rgba(255, 255, 255, 0.63);
 }
 
 footer {
