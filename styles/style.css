@@ -6,10 +6,12 @@
     --color-text: #696969c9;
     --color-white: #ffff;
 }
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-white);
@@ -33,14 +35,12 @@ svg{
     gap: 3em;
 }
 
-
 #navigation_header2{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3em;
 }
-
 
 .header{
     background-color: var(--color-white);
@@ -78,6 +78,13 @@ h4{
     display: none;
 }
 
+.fixar{
+  position: fixed;
+}
+
+.fixar2{
+  display: block;
+}
 
 @media screen and (max-width: 1468px) {
     .navigation_header{
@@ -126,10 +133,6 @@ h4{
     }
 }
 
-
-
-
-
 @keyframes showSidebar {
     from {margin-left: -100vw;}
     to {margin-left: -10vw;}
@@ -157,7 +160,6 @@ body::-webkit-scrollbar {
   color: white;
   margin: 40px auto;
 }
-
 
 .sobre2{
 
@@ -271,5 +273,3 @@ image {
     font-size: 1.25em;
     margin-top: 0.25em;
   }
-
-
