@@ -1,0 +1,250 @@
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 7% 0% 0%;
+    align-items: center;
+    z-index: 9999;
+    padding-left: 11.3%;
+    position: sticky;
+    gap: 3em;
+}
+
+#navigation_header2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
+.header{
+    background-color: var(--color-white);
+    justify-content: space-between;
+    height: 3.5em;
+}
+
+.content{
+    padding-top: 1%;
+    text-align: center;
+    margin-top: 5%;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-text);
+    transition: 1s;
+    font-weight: 400;
+}
+.navigation_header a:hover{
+    color: var(--color-black);
+    
+}
+.active{
+    color: black!important
+}
+h4{
+    font-weight: 400;
+    color: var(--color-text);
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+.fixar{
+  position: fixed;
+}
+
+.fixar2{
+  display: block;
+}
+
+@media screen and (max-width: 1468px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        padding-bottom: 1%;
+        background: rgba(255, 255, 255, 0.932);
+        width: 100%;
+        margin-left: 100%;
+        height: 100vh;
+        padding: 1em;
+        animation-duration: 1s;
+    }
+
+    .container {
+      padding-top: 0%!important
+    }
+
+    #cp {
+      font-size: 10px;
+    }
+    #navigation_header2{
+      flex-direction: column;
+    }
+
+    .form h1 {
+      font-size: 1em!important;
+
+    }
+
+    #minhafoto {
+      width:50%;
+    }
+    .form {
+      margin-left: 10%;
+    }
+
+    nav a {
+      display: flex;
+      animation-duration: 1s;
+      padding: 1em;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+
+body::-webkit-scrollbar {
+    width: 14px;              /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(231, 231, 231)   ;   /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(27, 27, 27);    /* color of the scroll thumb */
+    border-radius: 0px;     /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+  }
+
+.sobre{
+  max-width: 100%;
+  height: 40vh;
+  text-align: left;
+  background: #131313;
+  color: white;
+  margin: 40px auto;
+}
+
+.sobre2{
+
+  max-width: 100%;
+  height: 40vh;
+  text-align: left;
+  color: white;
+  background: #131313;
+  margin: 0px auto;
+}
+
+.sobre img {
+  max-width: 45vh;
+  float: left;
+  border-radius: 0%;
+}
+
+#minhafoto {
+  margin-top: -0.5%;
+  width: 36vh;
+  margin-left: 8%;
+}
+.sobreInfo {
+  padding-top: 5%;
+  font-size: 1.5vh;
+  text-align: left;
+  margin-right: 22%;
+}
+
+.sobreInfo h4,Span{
+  color: var(--color-green);
+  font-weight: 200; 
+}
+
+.float {
+    color: var(--color-green);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.sobreInfo p {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+footer {
+  display: flex;
+}
+
+.devProjeto {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-radius: 0%;
+}
+
+.devProjeto p {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image_img {
+    display: block;
+    width:100%;
+  }
+  
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    align-items: center;
+    transition: 0.25s;
+    justify-content: center;
+  }
+  
+  .image__overlay--blur {
+    backdrop-filter: blur(6px);
+  }
+  
+  .image__overlay:hover{
+    opacity: 1;
+  }
+  
+  .image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  
+  .image__overlay:hover > * {
+    transform: translateY(0px);
+  }
+  
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+  }
