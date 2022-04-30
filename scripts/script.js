@@ -3,7 +3,7 @@ var navigationHeader = document.getElementById('navigation_header');
 var content          = document.getElementById('content');
 var sl          = document.getElementById('sl');
 var showSidebar      = false;
-var seta = document.getElementById('seta')
+
 
     function toggleSidebar()
     {
@@ -14,7 +14,7 @@ var seta = document.getElementById('seta')
             navigationHeader.style.animationName = 'showSidebar';
             content.style.filter = 'blur(4px)';
             sl.style.filter = 'blur(4px)';
-            seta.style.filter = 'blur(4px)';
+            document.querySelector('body').style.overflowY='hidden';
         }
         else
         {
@@ -22,7 +22,7 @@ var seta = document.getElementById('seta')
             navigationHeader.style.animationName = '';
             content.style.filter = '';
             sl.style.filter = '';
-            seta.style.filter = '';
+            document.querySelector('body').style.overflowY='unset';
         }
     }
 
@@ -30,7 +30,6 @@ var seta = document.getElementById('seta')
     {
         if(showSidebar)
         {
-            showSidebar = true;
             toggleSidebar();
         }
     }

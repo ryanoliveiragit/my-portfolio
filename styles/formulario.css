@@ -10,9 +10,6 @@
   transition: all 0.3s ease;
 }
 
-body.menu-active .container2 {
-  transform: scale(0.9);
-}
 
 .container2 .inner {
   width: 100%;
@@ -21,88 +18,6 @@ body.menu-active .container2 {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-.nav2 {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  margin: 0;
-  padding: 0 25px;
-  box-sizing: border-box;
-}
-
-.nav2 a {
-  display: inline-block;
-  height: 75px;
-  line-height: 75px;
-  font-size: 30px;
-  padding: 0 25px;
-  color: #212121;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  
-  transition: all 0.32s ease;
-}
-
-body:not(.menu-active) .nav2 a.menu-activator:hover {
-  transform: rotate(90deg);
-}
-
-body.menu-active .nav2 a.menu-activator {
-  transform: rotate(90deg);
-}
-
-.nav2 a.white {
-  color: #FAFAFA;
-}
-
-body.menu-active .nav2 a.white {
-  color: #212121;
-  transition: all 0.15s ease;
-}
-
-.nav2 a.link {
-  float: right;
-  position: relative;
-  text-align: center;
-}
-
-.nav2 a.link i {
-  position: absolute;
-  display: block;
-  transform: translateX(-50%);
-  
-  transition: all 0.32s ease;
-}
-
-.nav2 a.link i.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.nav2 a.link:hover i {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.nav2 a.link:hover i.hidden {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.nav2 i.ion-cube {
-  display: inline-block;
-  position: absolute;
-  height: 75px;
-  line-height: 75px;
-  font-size: 35px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .container2 .inner .panel {
@@ -143,27 +58,13 @@ body.menu-active .nav2 a.white {
 
 .container2 .inner .panel.panel-right {
   margin-right: -10%;
-  background: #1b1b1ba4;
 }
 
 .container2 .inner .panel.panel-right .panel-content .form {
-  display: block;
   position: absolute;
-  
-  width: 300px;
-  min-height: 400px;
-  top: 50%;
-  left: 25%;
+  margin-top: 15vh;
+  margin-left: 26%;
   transform: translateX(-50%) translateY(-25%);
-}
-
-.container2 .inner .panel.panel-right .panel-content .form h1 {
-  display: block;
-  margin: 0 0 35px 0;
-  color: #B1B1B1;
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-left: 1px;
 }
 
 
@@ -214,15 +115,6 @@ input:focus ~ label, input:valid ~ label 		{
   opacity: 1;
 }
 
-.highlight {
-  position: absolute;
-  height: 60%; 
-  width: 100px; 
-  top: 25%; 
-  left: 0;
-  pointer-events: none;
-  opacity: 0.5;
-}
 
 /* active state */
 input:focus ~ .highlight {
@@ -252,7 +144,7 @@ a.send-btn {
 }
 
 a.send-btn:hover {
-  color: rgb(54, 255, 4);
+  color: var(--color-green);
   cursor: pointer;
 }
 
@@ -269,38 +161,18 @@ a.send-btn:hover {
   transition: all 0.33s ease;
 }
 
-.menu::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(240,240,240,0.0);
-  
-  transition: all 0.45s ease;
-}
-
-body.menu-active .menu {
-  left: 0;
-}
-
-body.menu-active .menu::before {
-  background: rgba(240,240,240,0.9);
-}
-
 .text {
   color: white;
-  padding-left: 27%;
-  padding-top: 13%;
+  padding-left: 51.4%;
+  padding-top: 15%;
   font-weight: 250;
+  font-size: 1.2em;
 }
 
 
 .text2 {
   color: #B1B1B1;
-  padding-left: 27%;
+  padding-left: 51.4%;
   padding-top: 2%;
   font-weight: 200;
   font-size: 14px;
@@ -308,12 +180,28 @@ body.menu-active .menu::before {
 
 
 .form h1{
-  color: rgb(0, 255, 13);
+  color: var(--color-green);
 }
 
 #cp {
-  margin-left: 10.3%;
+  margin-left: 20.5%;
   color: #B1B1B1;
   font-weight: 200;
   font-size: 14px;
+}
+
+.footer {
+  background-color: transparent;
+  margin-left: 49%;
+  margin-top: 3%;
+}
+
+.footer svg {
+  color: white;
+  max-width: 50px;
+}
+
+.footer svg:hover{
+  color: var(--color-green);
+  transition: 0.50s;
 }
