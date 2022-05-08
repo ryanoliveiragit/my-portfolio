@@ -282,8 +282,19 @@ image {
         display: block;
     }
 
+    .miniatura p {
+      font-size: 10px!important;
+    }
+
+    .miniatura a {
+      font-size: 18px!important;
+    }
     .image__title{
       font-size: 2em!important;
+    }
+
+    .mobilec {
+      font-size: 0.8em!important;
     }
 
     .image__description {
