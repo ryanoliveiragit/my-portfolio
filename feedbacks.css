@@ -1,13 +1,9 @@
 body {
-    background-image: url('./assets/feedbackbg.png');
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: white;
-    color: white;
+  background-image: url('./assets/feedbackbg.png');
+  background-size: 182vh;
+  color: white;
+  background-repeat: no-repeat;
 }
-
-
 
 div.setaBaixo{
     width: 30px;
@@ -15,8 +11,8 @@ div.setaBaixo{
     background-image: url("/assets/setaDownWhite.png");
     background-size: contain;
     position: relative;
-    right: -100%;
-    margin-top: -13%;
+    right: -95%;
+    margin-top: -15%;
     transform: translateX(-50%);
     animation-name: setaBaixo;
     animation-duration: 1s;
@@ -38,8 +34,21 @@ h4 {
     color: white!important;
 }
 
-.ds {
-    padding-top: 8%;
+.pt {
+    margin-top: 7%;
+    display:flex;
+    max-width:83%;
+    padding-bottom: 3%;
+    text-decoration: none;
+    margin-left: 7.4%;
+}
+
+.pt a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+.pt ul {
+    color: var(--color-text);
 }
 
 .mb {
@@ -50,27 +59,45 @@ h4 {
 .ft h1 {
     padding-bottom: 2%;
     padding-top: 2%;
-    margin-left: 5%;
+    margin-left: 3.1%;
 }
 .collors img {
     width: 75%;
     padding-top: 2%;
-    padding-left: 13%;
+    padding-left: 11%;
 }
 
 .mobilec {
-    width: 60%;
+    width: 80%;
     display: inline-flex;
-    padding-top: 4%;
+    padding-top: 1%;
+    margin-right: 1%;
     color: black;
-    padding-bottom: 5%;
+}
+.mobilec img {
+    width: 62%;
+}
+details > a{
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .mobilec {
-    padding-left: 10%;
+    padding-left: 6%;
 }
 
+.mobile {
+    max-width: 24%;
+}
 
+.mobile p{
+    color: var(--color-text);
+}
+
+.projetos {
+    padding-top: 3%;
+}
 .desafios {
     color: var(--color-black);
     transition: 0.8s;
@@ -145,7 +172,7 @@ h4 {
 }
 .navigation_header a{
     text-decoration: none;
-    color: white;
+    color: rgb(206, 206, 206);
     transition: 1s;
     font-weight: 400;
 }
@@ -176,6 +203,7 @@ h4{
   display: block;
 }
 
+
 svg{
     width: 55px;
     color: white;
@@ -183,21 +211,26 @@ svg{
 }
 
 @media screen and (max-width: 1468px) {
+
     .navigation_header{
-        position: absolute;
-        flex-direction: column !important;
-        top: 0;
-        padding-bottom: 1%;
-        background: rgba(19, 18, 18, 0.932);
-        width: 100%;
-        margin-left: 100%;
-        height: 100vh;
-        padding: 1em;
-        animation-duration: 1s;
-    }
+      position: absolute;
+      flex-direction: column !important;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.622);
+      border-radius: 5px;
+      height: 95vh;
+      width: 80vw;
+      padding: 0!important;
+      animation-duration: 1s;
+      margin-left: -100vw;
+  }
+  .btn_icon_header{
+      display: block;
+      padding: 2%;
+  }
 
     .container {
-      padding-top: 0%!important
+      padding-top: 1em;
     }
 
     #cp {
@@ -227,6 +260,9 @@ svg{
     .btn_icon_header{
         display: block;
     }
+    .pt {
+      margin-top: 12%;
+    }
 }
 
 @keyframes showSidebar {
@@ -248,3 +284,73 @@ body::-webkit-scrollbar {
     border-radius: 0px;     /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
   }
 
+
+.outrosProjetos {
+    padding-left: 19%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    display: flex;
+  }
+.outrosProjetos img{
+      width: 25%;
+      margin-right: 5%;
+      border-radius: 5px;
+  }
+
+  .outrosProjetos a {
+      text-decoration: none;
+      color: white;
+  }
+  
+.image_img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 97%;
+  width: 25%;
+  background: rgba(0, 0, 0, 0.7);
+  color:white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  align-items: center;
+  transition: 0.25s;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(6px);
+}
+
+.image__overlay:hover{
+  opacity: 1;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0px);
+}
+
+.image__title {
+  font-size: 1.3em;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image__description {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5%;
+  align-items: center;
+}

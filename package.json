@@ -1,6 +1,19 @@
 {
-  "name": "MEU-PORTFOLIO",
+  "name": "meu-portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanoliveiragit/MEU-PORTFOLIO.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ryanoliveiragit/MEU-PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/ryanoliveiragit/MEU-PORTFOLIO#readme",
+  "description": ""
 }

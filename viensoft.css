@@ -1,8 +1,6 @@
 body {
     background-image: url('./assets/viensoftbg2.png');
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: white;
+    background-size: 182vh;
     color: white;
+    background-repeat: no-repeat;
 }
