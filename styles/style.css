@@ -251,6 +251,7 @@ image {
       padding: 0!important;
       animation-duration: 1s;
       margin-left: -100vw;
+      left: 10%;
   }
 
   .navigation_header svg {
@@ -373,13 +374,18 @@ image {
   svg {
     width: 30px;
   }
+
+  .footer svg {
+    width: 30px;
+    padding-bottom: 20%;
+  }
   .navigation_header {
     max-width: 100vh;;
     background-color: rgba(0, 0, 0, 0.911);
     height: 100vh;
   }
   .header, .navigation_header {
-    padding-left: 3%;
+    padding-left: 3%
   }
   .slide {
     max-width: 100%!important;
@@ -468,6 +474,16 @@ image {
     margin-left: 0!important;
   }
 
+  .ft h1 {
+    font-size: 18px;
+    margin-left: 6.4%;
+    padding-top:-10%;
+    padding-bottom: 6%;
+    font-weight: 400;
+    color: var(--color-text);
+    padding-left: 17%;
+  }
+
   .sobre2 {
     display: none;
   }
@@ -535,6 +551,10 @@ image {
 
   .svm b{
     color: black;
+  }
+
+  .nvrs h1 {
+    font-size: 0.9em!important;
   }
 
 }
