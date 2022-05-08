@@ -49,7 +49,6 @@ svg{
 }
 
 .content{
-    padding-top: 7%;
     text-align: center;
     margin-top: 5%;
 }
@@ -331,8 +330,8 @@ image {
   }
 
   .sobre {
-    height: 120%;
-    padding-bottom: 10%;
+    height: 10%;
+    padding-bottom: 4%;
   }
 
   .ryanoliveira {
@@ -346,6 +345,7 @@ image {
   .sobreInfo h2{
     font-size:2.5em!important;
     margin-left: 23%;
+    margin-top: 1em;
   }
 
   .sobreInfo h4 {
@@ -356,10 +356,10 @@ image {
   .sobreInfo p{
     margin-top: 10%;
     margin-left: 23%;
-    font-size:1.4em;
+    font-size:1.2em;
   }
   #minhafoto {
-    width: 100%;
+    display: none;
   }
   .content {
     margin-top: 15%!important;
