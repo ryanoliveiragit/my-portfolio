@@ -115,9 +115,12 @@ details > a{
     font-size: 14px;
     width: 80%;
 }
-
 .desafios p {
     color: var(--color-text);
+}
+
+hr {
+  display: none;
 }
 
 .desafio {
@@ -396,7 +399,9 @@ body::-webkit-scrollbar {
   body {
     background-size: 192vh;
   }
-
+  hr {
+    display: block;
+  }
   svg{
     width: 30px;
   }

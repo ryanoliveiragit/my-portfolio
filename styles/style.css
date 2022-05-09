@@ -91,6 +91,7 @@ h4{
   position: fixed;
 }
 
+
 .fixar2{
   display: block;
 }
@@ -351,13 +352,20 @@ image {
     font-size: 1em!important
   }
   .nvrs {
-    font-size: 1.3em!important;
+    font-size: 1.1em!important;
+    margin-left: -0.4em;
   }
   .ryanoliveira {
       font-size: 2.5em!important;
   }
+
+
+  .pt {
+    max-width: none!important;
+    padding-right: 0!important;
+  }
   #sobreinfo h2{
-    font-size: 4em!important;
+    font-size: 3.5em!important;
   }
 
 
@@ -370,14 +378,17 @@ image {
   }
 
   h1 {
-    font-size: 1.6em!important;
+    font-size: 1.7em!important;
   }
 
   p {
     font-size: 1.1em!important;
 
   }
-
+ 
+  .mobile h1 {
+    font-size: 2em!important
+  }
   h2 {
     font-size: 1.6em!important;
   }
