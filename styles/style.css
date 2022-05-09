@@ -27,10 +27,12 @@ svg{
 .navigation_header{
     display: flex;
     flex-direction: row;
-    padding: 1% 7% 0% 0%;
+    padding: 2% 9% 0% 0%;
     align-items: center;
     z-index: 9999;
-    padding-left: 11.3%;
+    padding-left: 12%;
+    margin-left: 3%;
+    font-size: 1em;
     position: sticky;
     gap: 3em;
 }
@@ -39,13 +41,17 @@ svg{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
 }
 
 .header{
     background-color: var(--color-white);
     justify-content: space-between;
     height: 3.5em;
+}
+
+.header svg {
+  width: 50px;;
 }
 
 .content{
@@ -240,6 +246,12 @@ image {
 
   @media screen and (max-width: 1468px) {
 
+    .header {
+      padding-right: 12%!important;
+      padding-left: 6%!important;
+    }
+
+    .header
     .navigation_header{
       position: absolute;
       flex-direction: column !important;
@@ -333,6 +345,11 @@ image {
   .sobre {
     height: 10%;
     padding-bottom: 4%;
+  }
+
+  .header {
+    gap: 0!important;
+    margin-left: 0!important;
   }
 
   .ryanoliveira {

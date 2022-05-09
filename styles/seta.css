@@ -5,7 +5,7 @@ div.setaBaixo{
     background-size: contain;
     position: relative;
     right: -95%;
-    margin-top: -6%;
+    margin-top: -13%;
     transform: translateX(-50%);
     animation-name: setaBaixo;
     animation-duration: 1s;

@@ -44,3 +44,7 @@ var showSidebar      = false;
             toggleSidebar();
         }
     });
+
+    function Error(){
+        alert('Portfólio em desenvolvimento!');
+    }

@@ -1,6 +1,6 @@
 body {
   background-image: url('./assets/feedbackbg.png');
-  background-size: 182vh;
+  background-size: 105%;
   color: white;
   background-repeat: no-repeat;
 }
@@ -17,7 +17,8 @@ div.setaBaixo{
     background-image: url("/assets/setaDownWhite.png");
     background-size: contain;
     position: relative;
-    right: -95%;
+    right: -85%;
+    margin-right: 30%;
     margin-top: -15%;
     transform: translateX(-50%);
     animation-name: setaBaixo;
@@ -144,9 +145,9 @@ details > a{
 }
 
 .title {
-   margin-top: 20%;
+   margin-top: 25%;
    text-align: left;
-   padding-left: 12%;
+   padding-left: 10%;
    padding-bottom: 40%;
 }
 
@@ -213,6 +214,20 @@ h4{
   display: block;
 }
 
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 9% 0% 0%;
+    align-items: center;
+    z-index: 9999;
+    padding-left: 6%;
+    margin-left: 3%;
+    font-size: 1em;
+    position: sticky;
+    gap: 3em;
+}
+
 
 svg{
     width: 55px;
@@ -222,6 +237,13 @@ svg{
 
 @media screen and (max-width: 1468px) {
 
+  body {
+    background-size: 122vw;
+  }
+
+  .setaBaixo {
+    margin-left: -22%!important;
+  }
     .navigation_header{
       position: absolute;
       flex-direction: column !important;
@@ -233,7 +255,7 @@ svg{
       padding: 0!important;
       animation-duration: 1s;
       margin-left: -100vw;
-      left: -1%;
+      left: 0%!important
   }
   .btn_icon_header{
       display: block;
@@ -370,6 +392,9 @@ body::-webkit-scrollbar {
     padding-top: 20%;
     font-size: 0.8em;
     margin-right: 8%;
+  }
+  body {
+    background-size: 192vh;
   }
 
   svg{
