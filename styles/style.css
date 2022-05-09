@@ -342,6 +342,45 @@ image {
     background-color: rgb(255, 255, 255);
   }
 
+  .title {
+    font-size: 1.2em!important;
+    padding-top: 20%!important;
+  }
+
+  .title h4 {
+    font-size: 1em!important
+  }
+  .nvrs {
+    font-size: 1.3em!important;
+  }
+  .ryanoliveira {
+      font-size: 2.5em!important;
+  }
+  #sobreinfo h2{
+    font-size: 4em!important;
+  }
+
+
+  #sobreinfo h4{
+    font-size: 1.3em!important;
+  }
+
+  #sobreinfo p{
+    font-size: 1.6em!important;
+  }
+
+  h1 {
+    font-size: 1.6em!important;
+  }
+
+  p {
+    font-size: 1.1em!important;
+
+  }
+
+  h2 {
+    font-size: 1.6em!important;
+  }
   .sobre {
     height: 10%;
     padding-bottom: 4%;
@@ -572,6 +611,10 @@ image {
 
   .nvrs h1 {
     font-size: 0.9em!important;
+  }
+
+  .collors img {
+    width: 80%!important;
   }
 
 }
